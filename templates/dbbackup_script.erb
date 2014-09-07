@@ -1,0 +1,6 @@
+#! /bin/bash
+DATE=`date +%Y%m%d%H%M`
+src=$1
+dest=${1}.${DATE}.${2}
+dest_file=`basename $dest`
+cp -a $src <%= scope.lookupvar('kyototycoon::backup_directory') -%>/${dest_file}

@@ -32,7 +32,7 @@ logopt="-le"
 sid=<%= scope.lookupvar('kyototycoon::sid') %>
 ulogdir="$basedir/<%= scope.lookupvar('kyototycoon::params::ulogdir') -%>-${sid}"
 ulimsiz="<%= scope.lookupvar('kyototycoon::params::ulimsiz') -%>"
-#ktbin="${basedir}/<%= scope.lookupvar('kyototycoon::params::ktbin') -%>"
+ktbin="${basedir}/<%= scope.lookupvar('kyototycoon::params::ktbin') -%>"
 <% if @hamaster or @slave -%>
 mhost="<%= scope.lookupvar('kyototycoon::mhost') -%>"
 mport="<%= scope.lookupvar('kyototycoon::mport') -%>"
