@@ -5,7 +5,7 @@ class kyototycoon::service {
     enable     => true,
     hasstatus  => false,
     hasrestart => true,
+    provider   => 'init'
   }
-
 }
 

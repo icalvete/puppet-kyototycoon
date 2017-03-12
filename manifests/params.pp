@@ -14,7 +14,7 @@ class kyototycoon::params {
   $rtsfile       = 'rts'
   $plex_port     = '11211'
 
-  $backup_dir       = hiera('backup_dir')
+  $backup_dir       = hiera('backup_dir', '/srv/backup')
   $backup_directory = "${$backup_dir}/kyototycoon"
 
   case $::operatingsystem {
