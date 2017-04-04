@@ -1,4 +1,4 @@
-#puppet-kyototycoon
+# puppet-kyototycoon
 
 Puppet manifest to install and configure kyototycoon.
 
@@ -6,7 +6,7 @@ Puppet manifest to install and configure kyototycoon.
 
 See [kyototycoon](http://fallabs.com/kyototycoon/) and [Fundamental Specifications of Kyoto Tycoon](http://fallabs.com/kyototycoon/spex.html)
 
-##Actions:
+## Actions:
 
 * Only works in Ubuntu 13.10
 * Install and configure lonely server
@@ -16,7 +16,7 @@ See [kyototycoon](http://fallabs.com/kyototycoon/) and [Fundamental Specificatio
 * Install and configure an slave
 * Install and configure any combination of above
 
-##Example:
+## Example:
 
 A "Dual Master" cluster with memcached plugin
 
@@ -60,6 +60,6 @@ node 'ubuntu1303.smartpurposes.net' inherits test_defaults {
 ```
 
 
-##Authors:
+## Authors:
 
 Israel Calvete Talavera <icalvete@gmail.com>
