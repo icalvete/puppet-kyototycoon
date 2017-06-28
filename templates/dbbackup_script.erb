@@ -4,3 +4,4 @@ src=$1
 dest=${1}.${DATE}.${2}
 dest_file=`basename $dest`
 cp -a $src <%= scope.lookupvar('kyototycoon::backup_directory') -%>/${dest_file}
+/usr/bin/ktremotemgr slave -ur -ts $2 -host localhost -port <%= scope.lookupvar('kyototycoon::port') -%>
