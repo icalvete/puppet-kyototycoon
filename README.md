@@ -45,7 +45,6 @@ node 'ubuntu1302.smartpurposes.net' inherits test_defaults {
 
 An extra slave
 
-
 ```puppet
 node 'ubuntu1303.smartpurposes.net' inherits test_defaults {
   include roles::puppet_agent
