@@ -2,6 +2,8 @@ class kyototycoon (
 
   $hamaster          = false,
   $slave             = false,
+  $threads           = $processorcount * 8,
+  $log_level         = 'le',
   $port              = $kyototycoon::params::port,
   $sid               = $kyototycoon::params::sid,
   $mhost             = undef,
