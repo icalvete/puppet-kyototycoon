@@ -37,7 +37,7 @@ class kyototycoon::backup {
   cron { 'kyototycoon_backup':
     command => "${kyototycoon::backup_directorys}/dbbackup_tool",
     user    => 'root',
-    hour    => '2',
+    hour    => '5',
     minute  => '0',
     require => File["${kyototycoon::backup_directorys}/dbbackup_tool"]
   }
