@@ -39,7 +39,7 @@ mport="<%= scope.lookupvar('kyototycoon::mport') -%>"
 <% end -%>
 rtsfile="${basedir}/<%= scope.lookupvar('kyototycoon::params::rtsfile') -%>-${sid}.rts"
 #dbname="$basedir/casket-${sid}.kch#bnum=1000000"
-dbname="$basedir/casket-${sid}.kch"
+dbname="$basedir/casket-${sid}.<%= scope.lookupvar('kyototycoon::db_type') -%>"
 timeout=10
 th=<%= scope.lookupvar('kyototycoon::threads') %>
 <% if @memcached -%>

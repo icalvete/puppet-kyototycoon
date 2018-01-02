@@ -3,6 +3,7 @@ class kyototycoon (
   $hamaster          = false,
   $slave             = false,
   $threads           = $processorcount * 8,
+  $db_type           = 'kcd',
   $log_level         = 'le',
   $port              = $kyototycoon::params::port,
   $sid               = $kyototycoon::params::sid,
