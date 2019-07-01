@@ -2,6 +2,7 @@ class kyototycoon::service {
 
   service{ 'ktserver':
     ensure    => running,
+    enable     => true,
     provider  => 'base',
     hasstatus => false,
     start     => "/etc/init.d/ktserver start",

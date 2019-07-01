@@ -1,0 +1,3 @@
+#!/bin/bash
+/usr/bin/ktremotemgr sync -host localhost -port <%= @port -%> -cmd dbbackup
+/usr/bin/find <%= @backup_directory -%> -maxdepth 1 -mindepth 1 -regex ".*[^bin]" -type f -mtime +<%= @backup_retention -%> -exec rm -fR {} \;
